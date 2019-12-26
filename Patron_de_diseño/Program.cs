@@ -9,6 +9,7 @@ namespace Patron_de_diseño
         {
             string direccion = File.ReadAllText(@"C:\Users\JoshuaBasto\Desktop\PD.txt");
             string[] separadas;
+            DateTime fechaActual = DateTime.Now.Date;
             DateTime fecha;
             int diferenciasDias;
 
@@ -22,12 +23,20 @@ namespace Patron_de_diseño
             diferenciasDias = ts.Days;
 
             //Compara la fecha 
+            if (fecha == fechaActual)
             {
-                Console.WriteLine("{0} ocurrió hace {1}", separadas[0], diferenciasDias);
                 Console.WriteLine("{0} es hoy", separadas[0]);
             }
             else
             {
+                if (fecha > fechaActual)
+                {
+                    Console.WriteLine("{0} ocurría dentro de {1}", separadas[0], diferenciasDias);
+                }
+                else
+                {
+                    Console.WriteLine("{0} ocurrió hace {1}", separadas[0], diferenciasDias);
+                }
             }
 
 
