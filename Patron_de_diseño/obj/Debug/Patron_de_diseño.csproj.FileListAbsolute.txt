@@ -4,3 +4,9 @@ C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\bin\Debug\Patron_de_diseño
 C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.csprojAssemblyReference.cache
 C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.exe
 C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.pdb
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\bin\Debug\Patron_de_diseño.exe.config
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\bin\Debug\Patron_de_diseño.exe
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\bin\Debug\Patron_de_diseño.pdb
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\obj\Debug\Patron_de_diseño.csprojAssemblyReference.cache
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\obj\Debug\Patron_de_diseño.exe
+C:\Users\JoshuaBasto\Documents\GitHub\Eventos-\Patron_de_diseño\obj\Debug\Patron_de_diseño.pdb
