@@ -1,0 +1,6 @@
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\bin\Debug\Patron_de_diseño.exe.config
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\bin\Debug\Patron_de_diseño.exe
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\bin\Debug\Patron_de_diseño.pdb
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.csprojAssemblyReference.cache
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.exe
+C:\VisualEstudio\Patron_de_diseño\Patron_de_diseño\obj\Debug\Patron_de_diseño.pdb
