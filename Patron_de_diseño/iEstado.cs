@@ -8,6 +8,6 @@ namespace Patron_de_diseño
 {
     public interface iEstado
     {
-        string estadoFecha();
+        string estadoFecha(string dato);
     }
 }

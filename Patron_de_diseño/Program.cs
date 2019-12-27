@@ -26,14 +26,9 @@ namespace Patron_de_diseño
         {
             iLectorArchivo LectorCSV = new LectorArchivoCSV();
             Procesar(LectorCSV, "..\\..\\PD.txt");
-
-            var Fabricar = new EstadoFecha();
-            iEstado dtFechaEven = Fabricar.ObtenerIstancia(2);
-            EscribirResultado(dtFechaEven);
             
 
-
-
+            
 
             //// Difference in days.
             //diferenciasDias = ts.Days;
@@ -58,14 +53,37 @@ namespace Patron_de_diseño
 
         }
 
-        private static void EscribirResultado(iEstado dtFechaEven)
+        private static void EscribirResultado(iEstado dtFechaEven, string nEvento)
         {
-            Console.WriteLine(dtFechaEven.estadoFecha());
+            Console.WriteLine(dtFechaEven.estadoFecha(nEvento));
         }
 
         private static void Procesar(iLectorArchivo _lector, string ruta)
         {
+            var Fabricar = new EstadoFecha();
             var Resultado = _lector.LeerInformacion(ruta);
+            var fechacomparada = new ComparadorFecha();
+            int dato = 0;
+
+            foreach (var resultado in Resultado)
+            {
+                dato = fechacomparada.fechacomparada(resultado.dtFechaEvento);
+
+                iEstado dtFechaEven = Fabricar.ObtenerIstancia(dato);
+                EscribirResultado(dtFechaEven, resultado.cNombreEvento);
+            }
+            //string direccion = File.ReadAllText(@"C:\Users\JoshuaBasto\Desktop\PD.txt");
+            //string[] separadas;
+            //DateTime fechaActual = DateTime.Now.Date;
+            //DateTime fecha;
+            //int diferenciasDias;
+
+
+            //fecha = Convert.ToDateTime(separadas[1]);// convierte el dato de especifico en formato fecha
+
+            //TimeSpan ts = fechaActual - fecha;
+
+            
         }
     }
 }
