@@ -2,60 +2,19 @@
 
 namespace Patron_de_diseño
 {
-    public class EstadoDelEvantoPrecente : iEstado
+    public class EstadoDelEvento : iEstado
     {
-        public string estadoFecha(string dato)
+        public string estadoEvento(string evento, int fecha)
         {
-            if (difFecha())
+            if (fecha > 0)
             {
-                return dato + " \nEsta ocurriendo ahora";
+                return evento + " ocurría dentro de " + fecha;
             }
             else
             {
-                return "huy";
-            }
-        }
+                return evento + " ocurrió hace: " + fecha;
 
-        private bool difFecha()
-        {
-            return true;
-        }
-    }
-    public class EstadoDelEvantoPasado : iEstado
-    {
-        public string estadoFecha(string dato)
-        {
-            if (difFecha())
-            {
-                return dato + " ocurrió hace: {1}";
             }
-            else
-            {
-                return "huy";
-            }
-        }
-        private bool difFecha()
-        {
-            return true;
-        }
-    }
-    public class EstadoDelEvantoFuturo : iEstado
-    {
-        public string estadoFecha(string dato)
-        {
-            if (difFecha())
-            {
-                return  dato + " Ocurría dentro de {1}";
-            }
-            else
-            {
-                return "huy";
-            }
-        }
-
-        private bool difFecha()
-        {
-            return true;
         }
     }
 }
